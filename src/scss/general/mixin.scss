@@ -1,0 +1,15 @@
+@mixin radius($topLeft, $topRight, $bottomRight, $bottomLeft){
+   border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+}
+
+@mixin display($display, $gap){
+    display: $display;
+    gap: $gap;
+}
+
+@mixin animate_star($top, $right, $bottom, $delay, $duration){
+    inset: $top $right $bottom;
+    left: initial;
+    animation-delay: $delay;
+    animation-duration: $duration;
+}

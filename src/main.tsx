@@ -5,9 +5,6 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-// Contexto 
-import GlobalInfo from './context/GlobalInfo.tsx';
-
 // Componentes principales de renderización
 import Home from './routes/HomePage/Home.tsx';
 import ProjectDetails from './routes/ProjectDetailsPage/ProjectDetails.tsx';
@@ -34,8 +31,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <GlobalInfo>
-      <RouterProvider router={router}/>
-    </GlobalInfo>
+    <RouterProvider router={router}/>
   </StrictMode>,
 )
