@@ -5,6 +5,20 @@
 }
 
 body{
-    font-family: "Coming Soon";
-    font-size: 18px;
+    font-family: "Inter Regular";
+    font-size: 16px;
+}
+
+#root{
+    height: 100vh;
+    padding-top: 60px;
+    background: #BBD2C5;
+    background: linear-gradient(to left, #292E49, #536976, #b0c5b9);
+}
+
+
+@media screen and (width <= 450px){
+    #root{
+        padding-top: 100px;
+    }
 }

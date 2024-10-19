@@ -1,0 +1,78 @@
+.projects-container{
+    @include display(grid, 15px);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    .project{
+        position: relative;
+        padding-bottom: 20px;
+        background-color: transparent;
+        box-shadow: 0 0 10px #0001;
+        transition: transform .2s linear;
+        @include radius(10px);
+        
+        &:hover{
+            transform: translateY(-1px);
+            & > .thumbnail .description{opacity: 0}
+        }
+        .title, .tools, .project-links{padding-inline: 10px}
+    
+        .favourite{
+            position: absolute;
+            top: 0; left: 0;
+            display: inline-block;
+            width: 80px; height: 24px;
+            align-content: center;
+            text-align: center;
+            font-size: .8em;
+            color: #ffffff;
+            background-color: #f79800;
+            box-shadow: 1px 1px 5px #A02334;
+            @include radius(5px);
+            z-index: 10;
+    
+            svg{
+                position: relative;
+                top: 2px;
+                margin-right: 5px;
+            }
+        }
+    
+        .thumbnail{
+            position: relative;
+            height: 180px;
+    
+            img{
+                width: 100%; height: 100%;
+                object-fit: contain;
+            }
+    
+            .description{
+                position: absolute;
+                top: 0;
+                width: 100%; height: 95%;
+                padding-inline: 10px;
+                font-size: .9em;
+                color: #fff;
+                background-color: #0005;
+                align-content: center;
+                @include radius(3px);
+                transition: opacity .2s linear;
+                opacity: 0;
+            }
+        }
+    
+        .project-links{
+            @include display(flex, 0);
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+    
+        .title{text-wrap: balance}
+       
+        .tools{
+            @include display(flex, 5px);
+            flex-wrap: wrap;
+            margin-top: 6px;
+            font-size: .8em;
+        }
+    }
+}
