@@ -14,16 +14,18 @@ export default function Main(){
     return(
         <main className="main">
             <section className="projects">
-                <h1 className="section-title">Proyectos</h1>
+                <h1 className="projects-title">Proyectos</h1>
                 
                 <button type="button" className="change-thumbnail" onClick={()=>{isdesktopImage ? setIsDesktopImage(false) : setIsDesktopImage(true)}}>
                     Ver minuatura mobile
                 </button>
 
-                <Projects 
-                isDesktopImage={isdesktopImage}
-                projects={projects}
-                /> 
+                <div className="projects-container">
+                    <Projects 
+                    isDesktopImage={isdesktopImage}
+                    projects={projects}
+                    /> 
+                </div>
             </section>
 
             <section className="skills" id="skills">

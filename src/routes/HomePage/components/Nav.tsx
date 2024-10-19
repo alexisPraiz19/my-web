@@ -1,32 +1,37 @@
-import { House, Fire, Comment, User, Portfolio } from "../../../assets/Icons"
+import { open_menu } from "../functions/open_menu"// Funciones
+import { House, Fire, Comment, User, Portfolio } from "../../../assets/Icons"// Iconos
 
 export default function Nav(){
     return(
         <nav className="nav">
-            <a href="#home">
-                <House/>
-                <span>Inicio</span>
-            </a>
+            <img src="/svg/burger.svg" alt="icon-burger" className="burger" onClick={open_menu}/>
 
-            <a href="#projects">
-                <Portfolio/>
-                <span>Proyectos</span>
-            </a>
+            <div className="nav-links">
+                <a href="#home" className="nav-link">
+                    <House/>
+                    <span className="go-to">Inicio</span>
+                </a>
 
-            <a href="#skills">
-                <Fire/>
-                <span>Habilidades</span>
-            </a>
+                <a href="#projects" className="nav-link">
+                    <Portfolio/>
+                    <span className="go-to">Proyectos</span>
+                </a>
 
-            <a href="#about">
-                <User/>
-                <span>Sobre mí</span>
-            </a>
+                <a href="#skills" className="nav-link">
+                    <Fire/>
+                    <span className="go-to">Habilidades</span>
+                </a>
 
-            <a href="#feedback">
-                <Comment/>
-                <span>Feedback</span>
-            </a>
+                <a href="#about" className="nav-link">
+                    <User/>
+                    <span className="go-to">Sobre mí</span>
+                </a>
+
+                <a href="#feedback" className="nav-link">
+                    <Comment/>
+                    <span className="go-to">Feedback</span>
+                </a>
+            </div>
         </nav>
     )
 }

@@ -2,7 +2,7 @@
     width: 70px; height: 26px;
     border: none;
     cursor: pointer;
-    @include radius(5px, 5px, 5px, 5px);
+    @include radius(5px);
 }
 
 .title{font-family: "Madimi One"}

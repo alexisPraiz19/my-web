@@ -13,7 +13,7 @@
             flex-wrap: wrap;
             padding: 8px;
             list-style: none;
-            @include radius(3px, 3px, 3px, 3px);
+            @include radius(3px);
             outline: 1px dashed red;
         }
     }
@@ -39,7 +39,7 @@
                 translate: -50% 0;
                 overflow: hidden;
                 z-index: 10;
-                @include radius(5px, 5px, 5px, 5px);
+                @include radius(5px);
             }
         }
     }

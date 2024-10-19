@@ -1,4 +1,3 @@
-@import "./project.scss";
 @import "./skills.scss";
 
 .main{
@@ -11,14 +10,15 @@
     /* Sección "projectos" */
     .projects{
         position: relative;
-        @include display(grid, 15px);
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        font-size: .9em;
-        background-color: #fff;
+        padding-top: 20px;
 
-        .section-title{
+        .projects-title{
             position: absolute;
             top: -36px; left: 0;
+            color: #FFD18E;
+            font-family: "Coming Soon";
+            font-size: 1.55em;
+            letter-spacing: 1px;
         }
 
         .change-thumbnail{
@@ -32,9 +32,9 @@
             position: absolute;
             inset: 0;
             width: 100%; height: 100%;
-            padding: 3.2px;
+            padding: 13px;
             background-image: conic-gradient(from var(--angle),transparent 70%, blue, red, orange, violet, cyan);
-            @include radius(5px, 5px, 5px, 5px);
+            @include radius(5pp);
             translate: -3px -3px;
             z-index: -1;
             animation: bg_spin 10s linear infinite;
@@ -43,6 +43,7 @@
             filter: blur(20px);
             opacity: .7;
         }
+        @import "./project.scss";
     }
 
     /* Sección "Herramientas" */
@@ -50,7 +51,7 @@
         @include display(grid, 20px);
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         margin-top: 80px;
-        background-color: #fff;
+        background-color: $body;
     }
 }
 

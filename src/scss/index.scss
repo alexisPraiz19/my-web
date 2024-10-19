@@ -1,8 +1,9 @@
 /* General */
 @import "./general/font.scss";
+@import "./general/colors.scss";
 @import "./general/general.scss";
 @import "./general/mixin.scss";
 @import "./general/extend.scss";
 
 /* Estilado de los componentes Routes */
-@import "../routes/HomePage/scss/export_styles.scss"
+@import "../routes/HomePage/scss/export_styles.scss";

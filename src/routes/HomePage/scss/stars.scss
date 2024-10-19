@@ -35,7 +35,7 @@
         &:nth-child(6){@include animate_star(300px, 0, 0, 1.2s, 1.75s)}
         &:nth-child(7){@include animate_star(100px, -50px, 0, 1s, 2s)}
         &:nth-child(8){@include animate_star(0, 500px, 0, 1s, 3s)}
-        &:nth-child(9){@include animate_star(0, 300px, 0, 1.4s, 1.25s)}
+        &:nth-child(9){@include animate_star(0, 300px, 0, 1.4s, 2.25s)}
     }
 }
 

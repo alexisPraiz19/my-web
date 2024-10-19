@@ -1,5 +1,5 @@
-@mixin radius($topLeft, $topRight, $bottomRight, $bottomLeft){
-   border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+@mixin radius($radius){
+   border-radius: $radius;
 }
 
 @mixin display($display, $gap){
