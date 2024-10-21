@@ -1,7 +1,7 @@
 // Componentes de complementación
 import Nav from "./components/Nav"
 import Hero from "./components/Hero"
-import Main from "./components/Main"
+//import Main from "./components/Main"
 /*import About from "./components/About"
 import Footer from "./components/Footer"*/
 

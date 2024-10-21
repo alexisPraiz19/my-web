@@ -5,9 +5,10 @@
     translate: 0 -50%;
     width: 70px; height: 101vh;
     padding-block: 30px;
-    background-color: $navHomePage;
+    background-color: #404258;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    box-shadow: 0px 0 10px -2px #fff5;
     z-index: 100;
 
     .burger{
@@ -73,8 +74,8 @@
         height: auto;
         top: 10px; right: 0;
         translate: 0 0;
+        background-color: #434345e9;
         border-radius: 8px 0 0 8px;
-        box-shadow: 0px 0 10px -2px #fff5;
         transition: height .1s linear;
         interpolate-size: allow-keywords;
 

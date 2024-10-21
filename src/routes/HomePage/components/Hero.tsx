@@ -20,7 +20,6 @@ export default function Hero(){
                     <p className="presentation-text">
                         Este es un texto de presentación que puedes leer ahora que la página está en desarrollo y así orientarte
                         en lo que haces c:
-                        Este es un texto de presentación que puedes leer ahora que
                     </p>
                 </div>
             </figure>
@@ -28,14 +27,14 @@ export default function Hero(){
             {/*Enlaces*/}
             <div className="hero-links">
                 <div className="contact-links">
-                    <a href="mailto:alexispraiz18@gmail.com" title="mail"><Email/></a>
-                    <a href="#" title="github"><GitHubSvg/></a>
-                    <a href="https://www.linkedin.com/in/alexis-praiz-880392265/" title="linkeind" target="_blank"><Linkedin/></a>
+                    <a href="mailto:alexispraiz18@gmail.com" className="contact" title="mail"><Email/></a>
+                    <a href="#" className="contact" title="github"><GitHubSvg/></a>
+                    <a href="https://www.linkedin.com/in/alexis-praiz-880392265/" className="contact" title="linkeind" target="_blank"><Linkedin/></a>
                 </div>
 
                 <div className="cv-links">
                     <button type="button" className="open-modal-cv" onClick={open_modal}>Ver CV</button>
-                    <a href="/static/titulo del motovehiculo.pdf" onClick={alert_download}>Descargar CV</a>
+                    <a href="/static/titulo del motovehiculo.pdf" className="download-cv" onClick={alert_download}>Descargar CV</a>
                 </div>
             </div>
             
