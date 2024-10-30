@@ -1,0 +1,81 @@
+{
+    "current": [
+        {
+            "id": "HTML",
+            "detail": "HTML significa 'HyperText Markup Language' es un lenguaje de marcado que define la estructura del contenido y se basa en un lenguaje de marcas para crear documentos que puedan ser distribuidos por Internet.",
+            "icon": "/svg/html.svg"
+        },
+        {
+            "id": "CSS",
+            "detail": "CSS (siglas en inglés de Cascading Style Sheets; en español: «hojas de estilo en cascada») es un lenguaje informático especializado en definir y cohesionar la presentación de un documento escrito en un lenguaje de marcado como HTML.",
+            "icon": "/svg/css.svg"
+        },
+        {
+            "id": "JavaScript",
+            "detail": "JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico. Se utiliza principalmente del lado del cliente.",
+            "icon": "/svg/js.svg"
+        },
+        {
+            "id": "TypeScript",
+            "detail": "TypeScript es un lenguaje de programación libre y de código abierto desarrollado y mantenido por Microsoft. Permite escribir código con menos errores, más sencillo, coherente y fácil de probar, en definitiva, más limpio y sólido.",
+            "icon": "/svg/ts.svg"
+        },
+        {
+            "id": "React",
+            "detail": "React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario. El objetivo de React es facilitar el desarrollo de aplicaciones en una sola página.",
+            "icon": "/svg/react.svg"
+        },
+        {
+            "id": "SASS",
+            "detail": "Sass (Syntactically Awesome Stylesheets) es un preprocesador CSS que coge el código programado en otro lenguaje (Sass, SCSS) y lo transforma en código CSS. Su principal función es mejorar el entorno de desarrollo, brindando múltiples herramientas para estilar.",
+            "icon": "/svg/sass.svg"
+        },
+        {
+            "id": "Git",
+            "detail": "GIT es el sistema de control de versiones de código abierto más utilizado. Permite rastrear los cambios realizados en los archivos, y es utilizado por empresas y programadores para colaborar en el desarrollo de software y aplicaciones",
+            "icon": "/svg/git.svg"
+        },
+        {
+            "id": "GitHub",
+            "detail": "GitHub es una plataforma de desarrollo colaborativo que utiliza el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador. Permite almacenar, compartir y trabajar en proyectos junto con otros usuarios.",
+            "icon": "/svg/github.svg"
+        }
+    ],
+    "comming_soon": [
+        {
+            "id": "Node JS",
+            "detail": "NodeJS es un entorno de ejecución de código JavaScript. Es un entorno de tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor. NodeJS permite utilizar JavaScript para el backend de aplicaciones web, comandos de consola, y cualquier otro tipo de aplicaciones que se puedan correr en un servido",
+            "icon": "/svg/node.svg"
+        },
+        {
+            "id": "Express",
+            "detail": "Express.js es un framework de desarrollo web para Node.js. Es una librería JavaScript de código abierto y multiplataforma que proporciona a los desarrolladores una arquitectura sencilla pero potente para desarrollar aplicaciones web y APIs.",
+            "icon": "/svg/express.svg"
+        },
+        {
+            "id": "MySql",
+            "detail": "MySQL es un sistema de gestión de bases de datos relacionales o SGBD basado en SQL. Es la opción más utilizada para aplicaciones que se basan en la Web",
+            "icon": "/svg/mysql.svg"
+        }
+        ,{
+            "id": "Tailwind",
+            "detail": "Tailwind es un framework CSS que permite un desarrollo ágil, basado en clases de utilidad que se pueden aplicar con facilidad en el código HTML. A diferencia de los tradicionales como Bootstrap, Tailwind no crea componentes con una sola clase, sino que tiene clases específicas para cada cosa.",
+            "icon": "/svg/tailwind.svg"
+        },
+        {
+            "id": "Astro",
+            "detail": "Astro es el framework web para construir sitios web orientados al contenido, como blogs, marketing y comercio electrónico. Astro es conocido por ser pionero en una nueva arquitectura frontend para reducir la sobrecarga y complejidad de JavaScript en comparación con otros frameworks.",
+            "icon": "/svg/astro.svg"
+        },
+        {
+            "id": "AWS",
+            "detail": "Amazon Web Services (AWS) es la nube más adoptada y completa en el mundo, que ofrece más de 200 servicios integrales de centros de datos a nivel global.",
+            "icon": "/svg/aws.svg"
+        },
+        {
+            "id": "Python",
+            "detail": "Python es un lenguaje de programación en scripts, competencia directa de Perl. Su filosofía hace hincapié en la legibilidad de su código. Es un lenguaje multiparadigma que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional",
+            "icon": "/svg/python.svg"
+        }
+    ]
+}

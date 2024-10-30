@@ -5,4 +5,34 @@
     @include radius(5px);
 }
 
-.title{font-family: "Madimi One"}
+.title{
+    font-family: "Coming Soon";
+    font-size: 1.55em;
+    color: #FFD18E;
+    letter-spacing: 1px;
+}
+
+.sub_title{
+    font-size: 1.1em;
+    font-family: "Madimi One";
+    color: #ffdda9;
+    text-wrap: balance;
+}
+
+.text{
+    color: #c3c3c3;
+}
+
+.contact-links{
+    display: flex;
+    justify-content: space-around;
+
+    .contact{
+        svg{fill: #cacaca8b}
+
+        &:hover > svg{
+            scale: 1.1;
+            fill: #cacaca
+        }
+    }
+}

@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-
 /* Tipado de Proyectos */
 export type Project = {
     id: string,
@@ -7,33 +5,31 @@ export type Project = {
         desktop: string,
         mobile: string
     },
-    tools: [],
+    tools: {}[],
     title: string,
     description: string,
     favourite: boolean,
     repo: string,
     view: string
 }
-
-export type AttributeProject = { 
-    projects: {
-        id: string;
-        images: {
-            desktop: string;
-            mobile: string;
-        };
-        tools: string[];
-        title: string;
-        description: string;
-        favourite: boolean;
-        repo: string;
-        view: string;
-    }[],
-    isDesktopImage: boolean
+export interface SkillParams{
+    id: string;
+    icon: string;
+    detail: string;
 }
 
-export type LiSkillParams = {
-    icon: ReactNode,
-    title: string
-    detail?: string,
+export interface SkillComponentAttributes{
+    title: string;
+    json: SkillParams[]
+}
+
+export interface ProjectsParams{
+    isDesktopImage: boolean;
+    project: Project[];
+}
+
+export interface ToolsParams{
+    tool: string;
+    icon: string;
+    shadow: string;
 }

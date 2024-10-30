@@ -1,0 +1,186 @@
+ @property --angle{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}// Cración de "custom property"
+
+@keyframes bg_spin{
+    from{--angle: 0deg}
+    to{--angle: 360deg}
+}// Animación
+
+/* Estilos para Desktop */
+.main .projects{
+    opacity: .3;
+    transition: opacity .5s linear;
+
+    .projects-title{
+        @extend .title;
+        display: inline-block;
+    }// Título de la sección
+
+    .change-thumbnail{
+        position: absolute;
+        top: 12px; right: 0;
+        font-size: 12px;
+        color: #848181;
+        text-decoration: underline;
+        letter-spacing: .3px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        &:hover{filter: brightness(2)}
+    }// Botón para cambiar las miniaturas de las "cards" de los proyectos
+
+    .projects-container{
+        position: relative;
+        @include display(grid, 0);
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        row-gap: 15px;
+        margin-top: 15px;
+        background-color: #404259;
+        @include radius(5px);
+        &:hover > .project:not(:hover){opacity: .3}
+
+        /*box shadow animado*/
+        &::after, &::before{
+            content: "";
+            position: absolute;
+            inset: 0;
+            width: 100%; height: 100%;
+            padding: 2.5px;
+            background-image: conic-gradient(from var(--angle), transparent 65%,#6B728E,#BFECFF,);
+            translate: -2.5px -2.5px;
+            z-index: -1;
+            animation: bg_spin 8s linear infinite;
+            @include radius(5px);
+        }
+        &::before{
+            filter: blur(10px);
+            opacity: .7;
+        }
+
+        .project{
+            padding: 5px;
+            position: relative;
+            background-color: #404259;
+            cursor: grab;
+
+            &:hover{
+                .thumbnail-container .description{opacity: 1}
+                &{
+                    box-shadow: 0 0 5px #FFD18E;
+                    border-radius: 5px;
+                    scale: 1.050;
+                }
+            }
+            
+            .favourite{
+                position: absolute;
+                padding: 4px 8px;
+                align-content: center;
+                font-size: .7em;
+                font-weight: 600;
+                letter-spacing: .5px;
+                color: #968211;
+                background-color: #FFD18E;
+                border-radius: 5px;
+                z-index: 1;
+
+                svg{
+                    margin-right: 5px;
+                    padding-top: 3px;
+                }
+            }// Etiqueta de marcado "favorito"
+
+            .thumbnail-container{
+                position: relative;
+                height: 180px;
+
+                .thumbnail{
+                    width: 100%; height: 100%;
+                    object-fit: cover;
+                    border-radius: 3px;
+                }
+    
+                .description{
+                    position: absolute;
+                    top: 0;
+                    width: 100%; height: 100%;
+                    padding-inline: 10px;
+                    align-content: center;
+                    font-size: .7em;
+                    font-weight: 600;
+                    letter-spacing: .8px;
+                    color: #dcdcdc;
+                    background-color: #192047a9;
+                    opacity: 0;
+                    transition: opacity 110ms linear;
+                    border-radius: 3px;
+                }
+            }
+        }// Miniatura de la "card"
+
+        .project-links{
+            @include display(flex, 0);
+            justify-content: space-between;
+            margin-block: 5px;
+            font-size: .8em;
+
+            .see-web, .see-details{
+                width: 70px; height: 26px;
+                align-content: center;
+                font-family: "Inter Medium";
+                font-size: .95em;
+                text-align: center;
+                text-decoration: none;
+                color: #a4a4a4;
+                border-radius: 5px;
+            }
+
+            .see-web{
+                box-shadow: 0 0 4px -2px #ffdda9;
+                &:hover{box-shadow: 0 0px 6px -2px #ffdda9e5}
+            }
+            .see-details:hover{text-decoration: underline;}
+        }
+
+        .project-title{@extend .sub_title}
+
+        .tools{
+            @include display(flex, 0);
+            flex-wrap: wrap;
+            column-gap: 6px;
+            row-gap: 5px;
+            margin-top: 10px;
+            list-style: none;
+
+            .tool{
+                display: inherit;
+                align-items: center;
+                padding: 3px 5px 3px 3px;
+                font-size: .7em;
+                color: #fff;
+                @include radius(3px);
+
+                .tool-icon{
+                    width: 17px; height: 17px;
+                    margin-right: 2px;
+                }
+            }
+        }
+    }// Contenedor de las "cards" de proyectos
+}
+
+@media (width <= 460px){
+    .main .projects .projects-container{
+        row-gap: 30px;
+        &:hover > .project:not(:hover){opacity: 1}
+        &::after, &::before{animation-duration: 15s}
+        
+        .project{
+            &:hover{scale: 1.010}
+            .thumbnail-container{height: 250px}
+        }
+    }
+}
