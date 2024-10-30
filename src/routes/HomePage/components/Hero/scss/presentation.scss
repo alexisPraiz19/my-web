@@ -1,0 +1,53 @@
+.header .hero_figure{
+    @include display(flex, 20px);
+    align-items: center;
+    flex-direction: row-reverse;
+
+    .profile{
+        width: 150px; height: 150px;
+        border-radius: 5px;
+    }
+
+    .presentation{
+        padding: 10px 12px 10px 12px;
+        backdrop-filter: blur(1px);
+        border-radius: 5px;
+
+        .presentation-title{
+            @extend .title;
+            margin-bottom: 8px;
+            text-align: center;
+            font-family: "Courgette";
+            font-size: 1.7em;
+            letter-spacing: 1px;
+        }
+
+        .presentation-text{
+            @extend .text;
+            font-size: .85em;
+            line-height: 1.3;
+            letter-spacing: .3px;
+        }
+    }
+}// Avatar y Presentación
+
+@media (width <= 460px){
+    .header .hero_figure{
+        flex-direction: column;
+        gap: 5px;
+
+        .presentation{
+            padding: 0;
+            .presentation-title{ 
+                margin-top: 10px;
+                margin-bottom: 0; 
+                padding-inline: 10px;
+                text-wrap: balance;
+            }
+            .presentation-text{
+                text-align: center;
+                margin-block: 10px;
+            }
+        }
+    }
+}

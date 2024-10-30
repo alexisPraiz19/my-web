@@ -1,0 +1,73 @@
+.main .skills{
+    @include display(grid, 60px);
+    width: 100%;
+    margin-top: 80px;
+
+    
+    .container-skills{
+        text-align: center;
+
+        &:first-child > .skills-list{
+            scale: 1.02;
+            box-shadow: 0 1px 4px 1px #4f636f;
+        }
+        &:last-child{
+            .skill-title{font-size: 1.1em}
+            .skills-list .skill img{scale: .94}
+        }
+
+        .skill-title{
+            @extend .title;
+            margin-bottom: 18px;
+        }
+
+        .skills-list{
+            @include display(flex, 30px);
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 8px;
+            background-image: linear-gradient(to top, #474E68, #404258);
+            border-radius: 3px;
+            list-style: none;
+
+            .skill{
+                position: relative;
+                min-width: 50px;
+    
+                &:hover{
+                    .skill-detail{
+                        height: auto;
+                        padding-block: 10px;
+                    }
+                    
+                    .skill-icon{box-shadow: 0 0 10px #50577A}
+                }
+
+                .skill-icon{border-radius: 5px}
+    
+                .skill-detail{
+                    position: absolute;
+                    left: 50%;
+                    min-width: 230px; height: 0;
+                    padding-inline: 10px;
+                    font-size: .7em;
+                    text-wrap: balance;
+                    line-height: 1.3;
+                    color: #c3c3c3;
+                    background-color: #302939;
+                    translate: -50% 5px;
+                    overflow: hidden;
+                    border-radius: 5px;
+                    transition: all .2s ease;
+                    interpolate-size: allow-keywords;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}
+
+@media (width <= 460px){
+    .main .skills .container-skills .skills-list .skill{position: unset}
+}

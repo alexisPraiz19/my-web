@@ -1,0 +1,9 @@
+@import "./projects.scss";//Estilos sección "projectos" 
+@import "./skills.scss";//Estilos sección "habilidades" 
+
+.main{
+    position: relative;
+    width: 90%; max-width: 900px;
+    margin: 100px auto 0 auto;
+    background-color: transparent;
+}

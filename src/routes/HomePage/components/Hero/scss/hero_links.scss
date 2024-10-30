@@ -1,0 +1,47 @@
+.header .hero-links{
+    @include display(flex, 20px);
+    justify-content: space-between;
+    margin-top: 15px;
+
+    .contact-links{width: 150px}
+    
+    .cv-links{
+        display: inherit;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        .open-modal-cv, .download-cv{
+            padding: 4px 8px;
+            color: #cbcaca92;
+            font-weight: 500;
+            font-size: .8em;
+            background-color: transparent;
+            transition: box-shadow .1s linear;
+            @include radius(5px);
+        }
+        
+        .open-modal-cv{
+            @extend .button;
+            box-shadow: 0 0 4px -2px #ffdda9;
+            &:hover{box-shadow: 0 0px 8px -2px #ffdda9e5}
+        }
+        
+        .download-cv{
+            text-decoration: none;
+            transition: all .1s linear;
+            &:hover{
+                color: #a4a4a4;
+                translate: 0 -.5px;
+            }
+        }
+    }
+}// Enlaces de contacto y CV
+
+@media (width <= 460px){
+    .header .hero-links{
+        margin-top: 8px;
+        flex-direction: column-reverse;
+        .cv-links{justify-content: center}
+        .contact-links{width: 100%}
+    }
+}

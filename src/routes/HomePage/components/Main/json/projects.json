@@ -1,0 +1,296 @@
+{
+    "projects": [
+        {
+            "id": "interactive-comments",
+            "images": {
+                "desktop": "/images/projects/comments-desktop.jpeg",
+                "mobile": "/images/projects/comments-mobile.png"
+            },
+            "tools": [
+                {
+                    "tool": "HTML",
+                    "icon": "/svg/html.svg",
+                    "shadow": "0 0 3px rgba(242, 99, 39, .7) inset"
+                },
+                {
+                    "tool": "CSS",
+                    "icon": "/svg/css.svg",
+                    "shadow": "0 0 3px rgba(42, 101, 241, .7) inset"
+                },
+                {
+                    "tool": "JavaScript",
+                   "icon": "/svg/js.svg",
+                   "shadow": "0 0 3px rgba(247, 223, 30, .7) inset"
+                },
+                {
+                    "tool": "IndexedDB",
+                    "icon": "",
+                    "shadow": "0 0 3px rgba(164, 164, 164, .7) inset"
+                },
+                {
+                    "tool": "JSON",
+                    "icon": "",
+                    "shadow": "0 0 3px rgba(164, 164, 164, .7) inset"
+                }
+            ],
+            "title": "Interactive Comments",
+            "description": "CRUD con IndexedDB. Sencillo pero esencial para acentar principios que tienen todas las Bases de Datos y practicar lógica.",
+            "favourite": true,
+            "repo": "https://github.com/alexisPraiz19/interactive-comments-section",
+            "view": "https://interactive-comments-alexis-web.netlify.app/"
+        },
+        {
+            "id": "bookmark-landing-page",
+            "images": {
+                "desktop": "/images/projects/bookmark-desktop.webp",
+                "mobile": "/images/projects/bookmark-mobile.webp"
+            },
+            "tools":[
+                {
+                    "tool": "HTML",
+                    "icon": "/svg/html.svg",
+                    "shadow": "0 0 3px rgba(242, 99, 39, .7) inset"
+                },
+                {
+                    "tool": "CSS",
+                    "icon": "/svg/css.svg",
+                    "shadow": "0 0 3px rgba(42, 101, 241, .7) inset"
+                },
+                {
+                    "tool": "JavaScript",
+                   "icon": "/svg/js.svg",
+                   "shadow": "0 0 3px rgba(247, 223, 30, .7) inset"
+                },
+                {
+                    "tool": "Vite",
+                    "icon": "/svg/vite.svg",
+                    "shadow": "0 0 3px rgba(143, 111, 254, .7) inset"
+                },
+                {
+                    "tool": "SEO attributes",
+                    "icon": "",
+                    "shadow": "0 0 3px rgba(164, 164, 164, .7) inset"
+                }
+            ],
+            "title": "Bookmark Landing Page",
+            "description": "En este proyecto me enfoqué en hacer todo lo más nativo posible.",
+            "favourite": true,
+            "repo": "https://github.com/alexisPraiz19/bookmark",
+            "view": "https://bookmark-landing-page-alexis-web.netlify.app/"
+        },
+        {
+            "id": "space-tourism",
+            "images": {
+                "desktop": "/images/projects/space-tourism-desktop.webp",
+                "mobile": "/images/projects/space-tourism-mobile.webp"
+            },
+            "tools":[
+                {
+                    "tool": "React",
+                    "icon": "/svg/react.svg",
+                    "shadow": "0 0 3px rgba(0, 216, 255, .7) inset"
+                },
+                {
+                    "tool": "SASS",
+                    "icon": "/svg/sass.svg",
+                    "shadow": "0 0 3px rgba(207, 99, 154, .7) inset"
+                },
+                {
+                    "tool": "JavaScript",
+                    "icon": "/svg/js.svg",
+                    "shadow": "0 0 3px rgba(247, 223, 30, .7) inset"
+                },
+                {
+                    "tool": "Git",
+                    "icon": "/svg/git.svg",
+                    "shadow": "0 0 3px rgba(240, 81, 51, .7) inset"
+                },
+                {
+                    "tool": "Routers",
+                    "icon": "",
+                    "shadow": "0 0 3px rgba(164, 164, 164, .7) inset"
+                }
+            ],
+            "title": "Space Tourism",
+            "description": "Esta fue mi primera vez usando 'Routers' en React :) estoy satisfecho con el resultado.",
+            "favourite": true,
+            "repo": "https://github.com/alexisPraiz19/space-turism",
+            "view": "https://alexispraiz19.github.io/space-turism/"
+        },
+        {
+            "id": "easybank-landing-page",
+            "images": {
+                "desktop": "/images/projects/easybank-desktop.webp",
+                "mobile": "/images/projects/easybank-mobile.webp"
+            },
+            "tools":[
+                {
+                    "tool": "React",
+                    "icon": "/svg/react.svg",
+                    "shadow": "0 0 3px rgba(0, 216, 255, .7) inset"
+                },
+                {
+                    "tool": "SASS",
+                    "icon": "/svg/sass.svg",
+                    "shadow": "0 0 3px rgba(207, 99, 154, .7) inset"
+                },
+                {
+                    "tool": "TypeScript",
+                    "icon": "/svg/ts.svg",
+                    "shadow": "0 0 3px rgba(49, 120, 198, .7) inset"
+                },
+                {
+                    "tool": "Git",
+                    "icon": "/svg/git.svg",
+                    "shadow": "0 0 3px rgba(240, 81, 51, .7) inset"
+                },
+                {
+                    "tool": "Vite",
+                    "icon": "/svg/vite.svg",
+                    "shadow": "0 0 3px rgba(143, 111, 254, .7) inset"
+                }
+            ],
+            "title": "Easybank Landing Page",
+            "description": "Otro proyecto de práctica. Lo más dificil fue hacer que la ilustración del 'hero' quedase bien en diferentes dispositivos.",
+            "favourite": false,
+            "repo": "https://github.com/alexisPraiz19/space-turism",
+            "view": "https://alexispraiz19.github.io/space-turism/"
+        },
+        {
+            "id": "todo-app",
+            "images": {
+                "desktop": "/images/projects/todo-desktop.jpeg",
+                "mobile": "/images/projects/todo-mobile.png"
+            },
+            "tools":[
+                {
+                    "tool": "HTML",
+                    "icon": "/svg/html.svg",
+                    "shadow": "0 0 3px rgba(242, 99 ,39, .7) inset"
+                },
+                {
+                    "icon": "/svg/css.svg",
+                    "tool": "CSS",
+                    "shadow": "0 0 3px rgba(42, 101, 241, .7) inset"
+                },
+                {
+                    "tool": "JavaScript",
+                    "icon": "/svg/js.svg",
+                    "shadow": "0 0 3px rgba(247, 223, 30, .7) inset"
+                },
+                {
+                    "tool": "Best practices",
+                    "icon": "",
+                    "shadow": "0 0 3px rgba(164, 164, 164, .7) inset"
+                }
+            ],
+            "title": "TODO APP",
+            "description": "CRUD con IndexedDB. Sencillo pero esencial para acentar principios que tienen todas las Bases de Datos y practicar lógica de programación.",
+            "favourite": false,
+            "repo": "https://github.com/alexisPraiz19/space-turism",
+            "view": "https://alexispraiz19.github.io/space-turism/"
+        },
+        {
+            "id": "url-shoteing",
+            "images": {
+                "desktop": "/images/projects/url-shorten-desktop.webp",
+                "mobile": "/images/projects/url-shorten-mobile.webp"
+            },
+            "tools":[
+                {
+                    "icon": "/svg/html.svg",
+                    "tool": "HTML",
+                    "shadow": "0 0 3px rgba(242, 99, 39, .7) inset"
+                },
+                {
+                    "icon": "/svg/css.svg",
+                    "tool": "CSS",
+                    "shadow": "0 0 3px rgba(42, 101, 241, .7) inset"
+                },
+                {
+                    "icon": "/svg/js.svg",
+                    "tool": "JavaScript",
+                    "shadow": "0 0 3px rgba(247, 223, 30, .7) inset"
+                },
+                {
+                    "icon": "",
+                    "tool": "Best practices",
+                    "shadow": "0 0 3px rgba(164, 164, 164, .7) inset"
+                }
+            ],
+            "title": "Url Shortin",
+            "description": "CRUD con IndexedDB. Sencillo pero esencial para acentar principios que tienen todas las Bases de Datos y practicar lógica de programación.",
+            "favourite": false,
+            "repo": "https://github.com/alexisPraiz19/space-turism",
+            "view": "https://alexispraiz19.github.io/space-turism/"
+        },
+        {
+            "id": "url-shoteing2",
+            "images": {
+                "desktop": "/images/projects/url-shorten-desktop.webp",
+                "mobile": "/images/projects/url-shorten-mobile.webp"
+            },
+            "tools":[
+                {
+                    "icon": "/svg/html.svg",
+                    "tool": "HTML",
+                    "shadow": "0 0 3px rgba(242, 99, 39, .7) inset"
+                },
+                {
+                    "icon": "/svg/css.svg",
+                    "tool": "CSS",
+                    "shadow": "0 0 3px rgba(42, 101, 241, .7) inset"
+                },
+                {
+                    "icon": "/svg/js.svg",
+                    "tool": "JavaScript",
+                    "shadow": "0 0 3px rgba(247, 223, 30, .7) inset"
+                },
+                {
+                    "icon": "",
+                    "tool": "Best practices",
+                    "shadow": "0 0 3px rgba(164, 164, 164, .7) inset"
+                }
+            ],
+            "title": "Url Shortin",
+            "description": "CRUD con IndexedDB. Sencillo pero esencial para acentar principios que tienen todas las Bases de Datos y practicar lógica de programación.",
+            "favourite": false,
+            "repo": "https://github.com/alexisPraiz19/space-turism",
+            "view": "https://alexispraiz19.github.io/space-turism/"
+        },
+        {
+            "id": "url-shoteing3",
+            "images": {
+                "desktop": "/images/projects/url-shorten-desktop.webp",
+                "mobile": "/images/projects/url-shorten-mobile.webp"
+            },
+            "tools":[
+                {
+                    "icon": "/svg/html.svg",
+                    "tool": "HTML",
+                    "shadow": "0 0 3px rgba(242, 99, 39, .7) inset"
+                },
+                {
+                    "icon": "/svg/css.svg",
+                    "tool": "CSS",
+                    "shadow": "0 0 3px rgba(42, 101, 241, .7) inset"
+                },
+                {
+                    "icon": "/svg/js.svg",
+                    "tool": "JavaScript",
+                    "shadow": "0 0 3px rgba(247, 223, 30, .7) inset"
+                },
+                {
+                    "icon": "",
+                    "tool": "Best practices",
+                    "shadow": "0 0 3px rgba(164, 164, 164, .7) inset"
+                }
+            ],
+            "title": "Url Shortin",
+            "description": "CRUD con IndexedDB. Sencillo pero esencial para acentar principios que tienen todas las Bases de Datos y practicar lógica de programación.",
+            "favourite": false,
+            "repo": "https://github.com/alexisPraiz19/space-turism",
+            "view": "https://alexispraiz19.github.io/space-turism/"
+        }
+    ]
+}

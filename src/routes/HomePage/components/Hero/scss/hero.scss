@@ -1,0 +1,16 @@
+/* Estilos de componentes */
+@import "./stars.scss";
+@import "./presentation.scss";
+@import "./hero_links.scss";
+
+/* Estilos del Contenedor */
+.header{
+    position: relative;
+    width: 90%; max-width: 600px;
+    margin-inline: auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px -3px #ffe9b6;
+    overflow: hidden;
+    z-index: 10;
+}
